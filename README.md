@@ -13,13 +13,15 @@ To properly compare free-threading vs GIL-enabled Python, you should set up sepa
 
 ### Installing Python 3.14
 
-First, ensure you have both Python 3.14 variants installed on your system:
+Ensure you have both Python 3.14 variants installed on your system:
 - **python3.14t** - Free-threading build (GIL disabled)
 - **python3.14** - Standard build (GIL enabled)
 
 You can download these from:
 - [python.org downloads](https://www.python.org/downloads/)
-- Build from source with the appropriate configure flags
+- Or build from source with the appropriate configure flags
+
+Follow the instructions here to install 3.14 free-threaded build: https://docs.python.org/3/howto/free-threading-python.html#installation
 
 ### Creating Virtual Environments
 
