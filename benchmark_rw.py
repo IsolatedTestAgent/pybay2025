@@ -29,13 +29,13 @@ CPU_COUNT: int = mp.cpu_count()
 
 
 def expensive_calculation(n: int) -> float:
-    # UNBALANCED WORKLOAD: Some tasks are 10x heavier than others!
+    # UNBALANCED WORKLOAD: Some tasks are 500x heavier than others!
     # This creates poor load balance with static partitioning (multiprocessing)
     # but perfect balance with work-stealing (free-threading)
     result = 0
 
-    # Every 10th task is 10x more expensive
-    iterations = 1000 if n % 10 == 0 else 100
+    # Every 10th task is 500x more expensive
+    iterations = 50000 if n % 10 == 0 else 100
 
     for i in range(iterations):
         result += (
