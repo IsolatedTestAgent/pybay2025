@@ -35,7 +35,7 @@ def expensive_calculation(n: int) -> float:
     result = 0
 
     # Every 10th task is 500x more expensive
-    iterations = 50000 if n % 10 == 0 else 100
+    iterations = 25000000 if n % 10 == 0 else 100
 
     for i in range(iterations):
         result += (
