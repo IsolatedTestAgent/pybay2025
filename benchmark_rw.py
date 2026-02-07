@@ -34,8 +34,8 @@ def expensive_calculation(n: int) -> float:
     # but perfect balance with work-stealing (free-threading)
     result = 0
 
-    # Every 10th task is 500x more expensive
-    iterations = 50000 if n % 10 == 0 else 100
+    # Every 10th task is 200x more expensive
+    iterations = 20000 if n % 10 == 0 else 100
 
     for i in range(iterations):
         result += (
